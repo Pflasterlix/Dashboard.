@@ -1,0 +1,79 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: left;
+    color: purple;
+    position: relative;
+}
+
+.container h1::after {
+    content: "";
+    position: absolute;
+    bottom: -25px; 
+    left: 0;
+    width: 40%; 
+    border-bottom: 3px solid purple; 
+}
+
+.dashboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dashboard th,
+.dashboard td {
+
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.dashboard th {
+    background-color: white;
+}
+
+.dashboard th:first-child {
+    width: 30px;
+}
+
+.dashboard th:last-child,
+.dashboard td:last-child {
+    text-align: left;
+}
+
+.dashboard tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.menu-dropdown.active {
+    display: block;
+}
+
+th, td {
+    padding: 10px 20px;
+}
